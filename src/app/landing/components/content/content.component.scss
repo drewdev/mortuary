@@ -1,0 +1,25 @@
+.container-fluid {
+    @media (max-width: 1000px){
+        width: 157%;
+    }
+}
+.content {
+    margin: 0 10rem 0 10rem;
+    @media (max-width: 1000px){
+        margin: 0 0 0 0;
+    }
+    .card-form {
+        margin: 2rem 6rem;
+        @media (max-width: 1000px){
+            margin: 0 0 0 0;
+        }
+    } 
+    .services {
+        padding: 3rem !important;
+        @media (max-width: 1000px){
+            padding: 0 !important;
+        }
+    }
+}
+
+
