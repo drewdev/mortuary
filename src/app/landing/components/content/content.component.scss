@@ -4,14 +4,12 @@
     }
 }
 .content {
-    font-family: 'Roboto';
     color: rgba(0,0,0,.7);
     margin: 0 10rem 0 10rem;
     @media (max-width: 1000px){
         margin: 0 0 0 0;
     }
     .card-form {
-        margin: 2rem 6rem;
         @media (max-width: 1000px){
             margin: 0 0 0 0;
         }
@@ -22,6 +20,57 @@
             padding: 0 !important;
         }
     }
+    .service-container {
+        height:390px;
+        @media (max-width: 500px){
+            height: 675px;
+        }
+    }
+    .about {
+        max-width: 800px;
+        margin-left: 9rem;
+        @media (max-width: 500px){
+            margin-left: 0;
+            img {
+                width: 620px;
+            }
+        }
+    }
+    .benefit {
+        @media (max-width: 500px){
+            margin-bottom: 1.5rem
+        }
+    }
+    
 }
 
+.maps {
+    margin: 24px 65px 60px 60px;
+    @media (max-width: 409px){
+        margin: 24px 65px 60px 23px
+    }
+    @media (min-width: 410px){
+        margin: 24px 65px 60px 113px
+    }
+}
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "+";
+    color: #5F9EA0; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.card{
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
