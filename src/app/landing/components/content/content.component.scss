@@ -3,6 +3,9 @@
         width: 157%;
     }
 }
+a {
+    color: black;
+}
 .form-background {
     color: white;
     background-image: url(../../../../assets/images/form.jpg);
@@ -35,7 +38,7 @@
         h2 {
             margin-bottom: 2rem;
             b{
-                border-bottom: 5px solid rgb(189, 183, 107);
+                border-bottom: 5px solid darkkhaki;
                 padding-bottom: 10px;
                 margin-bottom: 200px;
             }
@@ -74,20 +77,24 @@ ul {
   
   ul li::before {
     content: "+";
-    color: #5F9EA0; /* Change the color */
+    color: darkgreen; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
-.card-body{
-    transition: box-shadow 0.2s ease-in-out;
+
+
+.benefits {
+    .card-body{
+        transition: box-shadow 0.2s ease-in-out;
+    }
+    .card-body:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
 }
 
-.card-body:hover {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
 
 .btn-dark {
     background-color: darkgreen;
